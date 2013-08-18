@@ -42,7 +42,7 @@ fi
 
 # Install zsh
 sudo apt-get install -y zsh
-curl https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+curl https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 git clone https://github.com/TimFogarty/dotfiles.git
 ln -sb dotfiles/.screenrc .
