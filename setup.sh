@@ -39,10 +39,20 @@ fi
 if [ -d .emacs.d/ ]; then
     mv .emacs.d .emacs.d~
 fi
-git clone https://github.com/startup-class/dotfiles.git
+
+# Install zsh
+sudo apt-get install -y zsh
+curl https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
+git clone https://github.com/TimFogarty/dotfiles.git
 ln -sb dotfiles/.screenrc .
 ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
+ln -sb dotfiles/.zshrc .
 ln -sf dotfiles/.emacs.d .
+
+# Fix compatibility with urxvt-256
+mkdir -p ~/.terminfo/r
+cp dotfiles/rxvt-unicode-256color ~/.terminfo/r/
 
