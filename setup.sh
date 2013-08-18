@@ -43,7 +43,7 @@ fi
 # Install zsh
 sudo apt-get install -y zsh
 curl https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-chsh -s /bin/zsh ubuntu
+sudo chsh -s /bin/zsh ubuntu
 
 git clone https://github.com/TimFogarty/dotfiles.git
 ln -sb dotfiles/.screenrc .
@@ -56,3 +56,6 @@ ln -sf dotfiles/.emacs.d .
 # Fix compatibility with urxvt-256
 mkdir -p ~/.terminfo/r
 cp dotfiles/rxvt-unicode-256color ~/.terminfo/r/
+
+# Switch to zsh
+zsh
