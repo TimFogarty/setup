@@ -63,5 +63,8 @@ sudo npm install -g grunt-cli
 # Install compass
 sudo gem install compass
 
+# Install Yeoman
+sudo npm install -g yo
+
 # Switch to zsh
 zsh
