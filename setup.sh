@@ -57,5 +57,11 @@ ln -sf dotfiles/.emacs.d .
 mkdir -p ~/.terminfo/r
 cp dotfiles/rxvt-unicode-256color ~/.terminfo/r/
 
+# Install grunt-cli
+sudo npm install -g grunt-cli
+
+# Install compass
+sudo gem install compass
+
 # Switch to zsh
 zsh
