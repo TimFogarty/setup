@@ -45,7 +45,7 @@ sudo apt-get install -y zsh
 curl https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 sudo chsh -s /bin/zsh ubuntu
 
-git clone https://github.com/TimFogarty/dotfiles.git
+git clone https://github.com/tfogo/dotfiles.git
 ln -sb dotfiles/.screenrc .
 ln -sb dotfiles/.bash_profile .
 ln -sb dotfiles/.bashrc .
