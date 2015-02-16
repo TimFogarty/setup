@@ -14,7 +14,7 @@ curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/in
 sudo chsh -s /bin/zsh ubuntu
 
 # Set up dotfiles
-cp ~/setup/dotfiles/.* ~
+sudo cp ~/setup/dotfiles/.* ~
 
 # Switch to zsh
 zsh
