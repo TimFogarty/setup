@@ -3,7 +3,7 @@
 # Simple setup.sh for configuring Ubuntu 14.04 LTS EC2 instance.
 
 # Set up locale
-sudo apt-get install --reinstall language-pack-en
+sudo apt-get install -y --reinstall language-pack-en
 
 # Install git
 sudo apt-get install -y git
@@ -14,7 +14,7 @@ curl -L https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/in
 sudo chsh -s /bin/zsh ubuntu
 
 # Set up dotfiles
-cp ~/setup/dotfiles/* ~
+cp ~/setup/dotfiles/.* ~
 
 # Switch to zsh
 zsh
